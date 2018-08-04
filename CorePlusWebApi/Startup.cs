@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CorePlusWebApi.BLL.Services;
+using CorePlusWebApi.Common.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -62,6 +63,7 @@ namespace CorePlusWebApi
            });
 
             services.AddMvc();
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddScoped(typeof(IDataReadService<>), typeof(DataService<>));
             services.AddScoped<IPractitionerService, PractitionerService>();
         }
