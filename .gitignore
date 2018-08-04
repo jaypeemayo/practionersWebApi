@@ -23,3 +23,6 @@ CorePlusWebApi/obj/project.assets.json
 *.json
 *.props
 *.cache
+CorePlusWebApi/obj/CorePlusWebApi.csproj.nuget.cache
+*.cache
+*.cache
