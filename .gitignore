@@ -63,3 +63,5 @@ CorePlusWebApi/obj/Release/netcoreapp2.0/PubTmp/Out/Reports/Data/db.json
 CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.pdb
 CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.dll
 .vs/config/applicationhost.config
+CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.dll
+CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.pdb
