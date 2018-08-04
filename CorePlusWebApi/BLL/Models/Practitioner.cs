@@ -9,6 +9,6 @@ namespace CorePlusWebApi.BLL
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Appointment[] Appointments { get; set; }
+        public IList<Appointment> Appointments { get; set; }
     }
 }

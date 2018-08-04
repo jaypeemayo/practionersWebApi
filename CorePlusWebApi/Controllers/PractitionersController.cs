@@ -21,32 +21,9 @@ namespace CorePlusWebApi.Controllers
         [HttpGet("{searchText?}/{start?}/{end?}/{searchTextType?}")]
         public Practitioner[] Get(string searchText = null, DateTime? start = null, DateTime? end = null, string searchTextType = null)
         {
-            return this.practitionerService.GetPractitioners(searchText == "undefined" ? "" : searchText, start, end, searchTextType == "undefined" ? "" : searchTextType).ToArray();
+            return this.practitionerService.GetPractitioners(searchText, start, end, searchTextType).ToArray();
         }
 
-        //// GET api/practitioners/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //
-
-        // POST api/practitioners
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/practitioners/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/practitioners/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        
     }
 }
