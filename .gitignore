@@ -26,3 +26,5 @@ CorePlusWebApi/obj/project.assets.json
 CorePlusWebApi/obj/CorePlusWebApi.csproj.nuget.cache
 *.cache
 *.cache
+CorePlusWebApi/bin/Debug/netcoreapp2.0/CorePlusWebApi.pdb
+CorePlusWebApi/bin/Debug/netcoreapp2.0/CorePlusWebApi.dll
