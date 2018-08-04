@@ -69,3 +69,13 @@ CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.pdb
 *.pdb
 *.dll
 *.pdb
+CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.dll
+CorePlusWebApi/obj/Debug/netcoreapp2.0/CorePlusWebApi.pdb
+CorePlusWebApi/obj/Release/netcoreapp2.0/CorePlusWebApi.dll
+CorePlusWebApi/obj/Release/netcoreapp2.0/CorePlusWebApi.pdb
+CorePlusWebApi/obj/Release/netcoreapp2.0/CorePlusWebApi.PrecompiledViews.dll
+CorePlusWebApi/obj/Release/netcoreapp2.0/CorePlusWebApi.PrecompiledViews.pdb
+CorePlusWebApi/obj/Release/netcoreapp2.0/PubTmp/Out/CorePlusWebApi.dll
+CorePlusWebApi/obj/Release/netcoreapp2.0/PubTmp/Out/CorePlusWebApi.pdb
+CorePlusWebApi/obj/Release/netcoreapp2.0/PubTmp/Out/CorePlusWebApi.PrecompiledViews.dll
+CorePlusWebApi/obj/Release/netcoreapp2.0/PubTmp/Out/CorePlusWebApi.PrecompiledViews.pdb
