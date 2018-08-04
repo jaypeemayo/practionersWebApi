@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CorePlusWebApi.BLL;
 using CorePlusWebApi.BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CorePlusWebApi.Controllers
@@ -18,7 +19,7 @@ namespace CorePlusWebApi.Controllers
             this.practitionerService = practitionerService;
         }
 
-        [HttpGet("{searchText?}/{start?}/{end?}/{searchTextType?}")]
+        [HttpGet("{searchText?}/{start?}/{end?}/{searchTextType?}"), Authorize]
         public Practitioner[] Get(string searchText = null, DateTime? start = null, DateTime? end = null, string searchTextType = null)
         {
             return this.practitionerService.GetPractitioners(searchText, start, end, searchTextType).ToArray();
