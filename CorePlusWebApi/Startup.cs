@@ -24,18 +24,18 @@ namespace CorePlusWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCors(options =>
-            //{
-            //    options.AddPolicy("CorsPolicy",
-            //        builder => builder.WithOrigins("https://practionerreport.azurewebsites.net"));
-            //});
-
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins("http://localhost:8082"));
+                    builder => builder.WithOrigins("https://practitionersreport.azurewebsites.net"));
             });
+
+
+            //services.AddCors(options =>
+            //{
+            //    options.AddPolicy("CorsPolicy",
+            //        builder => builder.WithOrigins("http://localhost:8082"));
+            //});
 
             services.AddMvc();
             services.AddScoped(typeof(IDataReadService<>), typeof(DataService<>));
