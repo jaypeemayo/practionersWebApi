@@ -7,6 +7,6 @@ namespace CorePlusWebApi.BLL.Services
 {
     public interface IPractitionerService
     {
-        List<Practitioner> GetPractitioners(string searchText, DateTime? start, DateTime? end, string searchType);
+        List<Practitioner> GetPractitioners(string searchText, DateTime? start = null, DateTime? end = null, string searchType = null);
     }
 }

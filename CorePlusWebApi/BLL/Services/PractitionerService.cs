@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CorePlusWebApi.BLL.Services
 {
-    internal class PractitionerService : IPractitionerService
+    public class PractitionerService : IPractitionerService
     {
         private readonly IDataReadService<List<Practitioner>> dataReadService;
 
@@ -16,7 +16,7 @@ namespace CorePlusWebApi.BLL.Services
         {
             this.dataReadService = dataReadService;
         }
-        public List<Practitioner> GetPractitioners(string searchText, DateTime? start, DateTime? end, string searchType)
+        public List<Practitioner> GetPractitioners(string searchText, DateTime? start = null, DateTime? end = null, string searchType = null)
         {
             var practitioners = dataReadService.Read("CorePlusWebApi.BLL.Data.db.json");
 
