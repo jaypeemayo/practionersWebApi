@@ -34,7 +34,7 @@ namespace CorePlusWebApi
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
-                    builder => builder.WithOrigins("http://localhost:8080"));
+                    builder => builder.WithOrigins("http://localhost:8082"));
             });
 
             services.AddMvc();
